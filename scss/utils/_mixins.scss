@@ -1,0 +1,20 @@
+@mixin media($breakpoint){
+    @if $breakpoint == sm{
+        @media screen and (max-width: getBreakPoint('sm')){
+            @content;
+        }
+    }    @else if $breakpoint == md{
+        @media screen and (max-width: getBreakPoint('md')){
+            @content;
+        }
+    } @else if $breakpoint == lg{
+        @media screen and (max-width: getBreakPoint('lg')){
+            @content;
+        }
+    }@else if $breakpoint == xl{
+        @media screen and (max-width: getBreakPoint('xl')){
+            @content;
+        }
+    }
+    
+}

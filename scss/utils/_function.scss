@@ -1,0 +1,9 @@
+$fonts: (
+    montserrat: "Montserrat",
+    roboto: "Roboto",
+    kushan: "Kaushan Script"
+);
+
+@function getFont($key){
+    @return map-get($fonts, $key);
+}

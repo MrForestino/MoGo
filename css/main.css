@@ -1,0 +1,74 @@
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+  margin: 0;
+}
+
+ol, ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1200px;
+  outline: 1px solid rgb(165, 132, 255);
+}
+
+.header__items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__list {
+  display: flex;
+}
+
+.item__link:nth-child(-n+3) {
+  margin-right: 55px;
+}
+
+.item__link:nth-child(4) {
+  margin-right: 32px;
+}
+
+.hero__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 33px;
+}
+.hero__item {
+  width: 367px;
+  height: 74px;
+}
+.hero__text {
+  font-size: 15px;
+  width: 310px;
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,16 @@
+.header{
+    &__items{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &__list{
+        display: flex;
+    }
+}
+.item__link:nth-child(-n+3){
+    margin-right: 55px;
+}
+.item__link:nth-child(4){
+    margin-right: 32px;
+}
