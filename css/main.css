@@ -29,15 +29,34 @@ img {
 }
 
 body {
-  font-family: "Montserrat", sans-serif;
+  font-family: getFont("montserrat");
   font-size: 14px;
   font-weight: 400;
 }
 
 .container {
   margin: 0 auto;
-  width: 1200px;
   outline: 1px solid rgb(165, 132, 255);
+}
+@media (min-width: getBreakPoint("sm")) {
+  .container {
+    max-width: getBreakPoint("sm");
+  }
+}
+@media (min-width: getBreakPoint("md")) {
+  .container {
+    max-width: getBreakPoint("md");
+  }
+}
+@media (min-width: getBreakPoint("lg")) {
+  .container {
+    max-width: getBreakPoint("lg");
+  }
+}
+@media (min-width: getBreakPoint("xl")) {
+  .container {
+    max-width: getBreakPoint("xl");
+  }
 }
 
 .header__items {

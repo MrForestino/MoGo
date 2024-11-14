@@ -7,3 +7,6 @@ $fonts: (
 @function getFont($key){
     @return map-get($fonts, $key);
 }
+@function getBreakPoint($key) {
+	@return map-get($break-points, $key);
+}
