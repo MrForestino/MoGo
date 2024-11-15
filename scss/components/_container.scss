@@ -1,6 +1,7 @@
 .container{
     margin: 0 auto;
-    // width: 1200px;
+    outline: 1px solid rgb(165, 132, 255);
+
     @media (min-width: getBreakPoint('sm')){
         max-width: getBreakPoint('sm');
     }
@@ -13,5 +14,4 @@
     @media (min-width: getBreakPoint('xl')){
         max-width: getBreakPoint('xl');
     }
-    outline: 1px solid rgb(165, 132, 255);
 }
