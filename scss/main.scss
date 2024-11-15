@@ -1,18 +1,16 @@
-@import "./base/reset";
-@import "./base/common";
+// utils
+@import './base/reset';         // Скидання стилів браузера
+@import './utils/fonts';        // Шрифти
+@import './utils/colors';    // Кольори
+@import './utils/breakpoints';  // Точки перегину
+@import './utils/mixins';       // Міксини
 
+// base
+@import './base/common';        // Глобальні стилі
 
-@import "./components/container";
+// components
+@import './components/container'; // Компоненти
 
-//layput
-@import "./layout/header";
-@import "./layout/hero";
-
-//utils
-@import "./utils/breakpoints";
-@import "./utils/fonts";
-@import "./utils/mixins";
-@import "./utils/variables";
-@import "./utils/function";
-
-
+// layout
+@import './layout/header';      // Макети
+@import './layout/hero';        // Макети

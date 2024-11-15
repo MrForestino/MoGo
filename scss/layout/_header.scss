@@ -3,14 +3,42 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-bottom: 12px;
+
     }
     &__list{
         display: flex;
     }
+    &__title{
+        font-size: 30px;
+        font-weight: 700;
+        color: getColor(cyan);
+        width: 98px;
+        height: 33px;
+    }
+}
+.item__link{
+    color: getColor(cyan);
+}
+.list__link--item:hover{
+    color: getColor(red);
 }
 .item__link:nth-child(-n+3){
     margin-right: 55px;
 }
+.item__link:nth-child(1){
+    width: 52px;
+}
+.item__link:nth-child(2){
+    width: 62px;
+}
+.item__link:nth-child(3){
+    width: 48px;
+}
 .item__link:nth-child(4){
+    width: 42px;
     margin-right: 32px;
+}
+.item__link:nth-child(5){
+    width: 69px;
 }

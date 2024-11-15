@@ -1,5 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto&display=swap');
 $fonts: (
     montserrat: "Montserrat",
     roboto: "Roboto",
     kushan: "Kaushan Script"
 );
+@function getFont($name) {
+	@return map-get($fonts, $name);
+}

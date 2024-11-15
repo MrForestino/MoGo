@@ -1,8 +1,16 @@
-body{
-    // font-family: "Montserrat", sans-serif;
-    font-family: getFont("montserrat");
-
+// montserrat,roboto,kushan
+body {
+    font-family: getFont('montserrat'), sans-serif;
     font-size: 14px;
     font-weight: 400;
 }
-// montserrat,roboto,kushan
+h2{
+    text-align: center;
+}
+a:hover{
+    color: getColor(red);
+}
+.hero__title--smalli{
+    text-align: center;
+
+}
