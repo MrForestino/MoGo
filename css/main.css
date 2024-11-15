@@ -93,7 +93,7 @@ a:hover {
   color: #95e1d3;
 }
 
-.list__link--item:hover {
+.item__link:hover {
   color: #f38181;
 }
 

@@ -20,7 +20,7 @@
 .item__link{
     color: getColor(cyan);
 }
-.list__link--item:hover{
+.item__link:hover{
     color: getColor(red);
 }
 .item__link:nth-child(-n+3){
