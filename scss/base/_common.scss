@@ -4,13 +4,11 @@ body {
     font-size: 14px;
     font-weight: 400;
 }
-h2{
-    text-align: center;
-}
 a:hover{
     color: getColor(red);
 }
-.hero__title--smalli{
+h2 , .hero__title--smalli{
     text-align: center;
-
+    font-family: getFont("kushan");
+    color: black;
 }
