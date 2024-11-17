@@ -1,15 +1,43 @@
 .meetourteam{
 	padding-top: 100px;
+	&__title{
+		position: relative;
 
+		height: 113px;
+	}
+	&__title--section{
+		&:after{
+			position: absolute;
+			content: "";
+			display: block;
+			width: 60px;
+			height: 4px;
+			bottom: 0;
+			left: 47%;
+
+			background-color: getColor(red);
+		}
+	}
 	&__text{
 		text-align: center;
-		margin: 85px 0 27px;
+		margin: 0 auto;
+		width: 290px;
+		@include media('md'){
+			width: 400px;
+		}
+		@include media('lg'){
+			width: 730px;
+		}
+		@include media('xl'){
+			width: 1104px;
+		}
 	}
 	&__item{
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
 		gap: 30px;
+		margin-top: 27px;
 		&--img{
 			margin-bottom: 30px;
 		}
@@ -19,6 +47,6 @@
 		// &--work-positi{}
 		&--person-name,&--work-position{
 			text-align: center;
-}
+		}
 	}
 }

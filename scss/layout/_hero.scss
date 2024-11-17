@@ -5,25 +5,46 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
         gap: 33px;
+        
     }
+    &__title{
+        position: relative;
+
+        height: 136px;
+    }
+    &__title--section{
+        &:after{
+            position: absolute;
+            content: "";
+            display: block;
+            width: 60px;
+            height: 4px;
+            bottom: 0;
+            left: 47%;
+
+            background-color: getColor(red);
+        }
+    }
+    
     &__item{
-        width: 367px;
+        width: 330px;
         height: 74px;
 
         &-title{
             text-transform: uppercase;
-            color: black;
+            color: getColor(dark);
             margin-bottom: 20px;
+        } 
+    }
+    &__item:nth-child(1),&__item:nth-child(2),&__item:nth-child(4),&__item:nth-child(5){
+        @include media ('xl'){
+            margin-right: 70px;
         }
-
-      
     }
     &__text{
         font-size: 15px;
         width: 310px;
-        color: gray;
+        color: getColor(grey);
     }
-    
 }

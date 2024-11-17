@@ -7,8 +7,23 @@ body {
 a:hover{
     color: getColor(red);
 }
-h2 , .hero__title--smalli{
+h2 , .hero__title--smalli,.meetourteam__title--smalli{
     text-align: center;
     font-family: getFont("kushan");
-    color: black;
+    color: getColor(dark);
+}
+.active{
+    color: getColor(red);
+}
+.meetourteam__title--smalli{
+    margin: 17px;
+}
+.hero__title--smalli{
+    margin-bottom: 20px;
+}
+.hero__title{
+    margin-bottom: 65px;
+}
+.meetourteam__title{
+    margin-bottom: 45px;
 }

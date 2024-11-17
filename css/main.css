@@ -39,10 +39,30 @@ a:hover {
   color: #f38181;
 }
 
-h2, .hero__title--smalli {
+h2, .hero__title--smalli, .meetourteam__title--smalli {
   text-align: center;
   font-family: "Kaushan Script";
-  color: black;
+  color: #333;
+}
+
+.active {
+  color: #f38181;
+}
+
+.meetourteam__title--smalli {
+  margin: 17px;
+}
+
+.hero__title--smalli {
+  margin-bottom: 20px;
+}
+
+.hero__title {
+  margin-bottom: 65px;
+}
+
+.meetourteam__title {
+  margin-bottom: 45px;
 }
 
 .container {
@@ -90,8 +110,26 @@ h2, .hero__title--smalli {
   height: 33px;
 }
 
+.list__link--item {
+  position: relative;
+}
+
+.active:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 3px;
+  position: absolute;
+  bottom: -100%;
+  background-color: #f38181;
+}
+
 .item__link {
   color: #95e1d3;
+}
+
+.active {
+  color: #f38181;
 }
 
 .item__link:hover {
@@ -131,36 +169,85 @@ h2, .hero__title--smalli {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
   gap: 33px;
 }
+.hero__title {
+  position: relative;
+  height: 136px;
+}
+.hero__title--section:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  bottom: 0;
+  left: 47%;
+  background-color: #f38181;
+}
 .hero__item {
-  width: 367px;
+  width: 330px;
   height: 74px;
 }
 .hero__item-title {
   text-transform: uppercase;
-  color: black;
+  color: #333;
   margin-bottom: 20px;
+}
+@media screen and (min-width: 1200px) {
+  .hero__item:nth-child(1), .hero__item:nth-child(2), .hero__item:nth-child(4), .hero__item:nth-child(5) {
+    margin-right: 70px;
+  }
 }
 .hero__text {
   font-size: 15px;
   width: 310px;
-  color: gray;
+  color: #b6b6b6;
 }
 
 .meetourteam {
   padding-top: 100px;
 }
+.meetourteam__title {
+  position: relative;
+  height: 113px;
+}
+.meetourteam__title--section:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  bottom: 0;
+  left: 47%;
+  background-color: #f38181;
+}
 .meetourteam__text {
   text-align: center;
-  margin: 85px 0 27px;
+  margin: 0 auto;
+  width: 290px;
+}
+@media screen and (min-width: 480px) {
+  .meetourteam__text {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .meetourteam__text {
+    width: 730px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .meetourteam__text {
+    width: 1104px;
+  }
 }
 .meetourteam__item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
+  margin-top: 27px;
 }
 .meetourteam__item--img {
   margin-bottom: 30px;
@@ -195,6 +282,7 @@ footer {
 form {
   position: relative;
   width: 380px;
+  height: 40px;
 }
 
 input {
@@ -206,6 +294,7 @@ input {
 button {
   font-family: "Montserrat", sans-serif;
   position: absolute;
+  top: 1px;
   right: 0;
   width: 150px;
   height: 40px;
@@ -214,4 +303,5 @@ button {
   font-variant: all-small-caps;
   text-align: center;
   font-weight: 700;
+  border: none;
 }/*# sourceMappingURL=main.css.map */
