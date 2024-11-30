@@ -1,6 +1,6 @@
 .container{
     margin: 0 auto;
-    outline: 1px solid rgb(165, 132, 255);
+    // outline: 1px solid rgb(165, 132, 255);
 
     @media (min-width: getBreakPoint('sm')){
         max-width: getBreakPoint('sm');

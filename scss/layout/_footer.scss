@@ -17,18 +17,21 @@ footer{
 }
 form{
 	position: relative;
+	align-items: center;
 	width: 380px;
 	height: 40px;
 }
 input{
 	font-family: getFont('montserrat'), sans-serif;
 	width: 230px;
-	height: 39px;
+	height: 37px;
+	padding-left: 10px;
+
 }
 button{
 	font-family: getFont('montserrat'), sans-serif;
 	position: absolute;
-	top: 1px;
+	top: -1px;
 	right: 0;
 	width: 150px;
 	height: 40px;
@@ -37,5 +40,9 @@ button{
 	font-variant: all-small-caps;
 	text-align: center;
 	font-weight: 700;
-	border: none;
+	border:1px solid getColor(cyan);;
+
+}
+.laaqiq{
+	color: getColor(red);
 }

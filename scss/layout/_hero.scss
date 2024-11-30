@@ -1,6 +1,6 @@
 .hero{
     padding-top: 68px;
-    outline: 1px solid red;
+    // outline: 1px solid red;
     &__list{
         display: flex;
         flex-wrap: wrap;
@@ -26,11 +26,11 @@
             background-color: getColor(red);
         }
     }
-    
     &__item{
         width: 330px;
         height: 74px;
-
+        position: relative;
+        display: flex;
         &-title{
             text-transform: uppercase;
             color: getColor(dark);
@@ -47,4 +47,9 @@
         width: 310px;
         color: getColor(grey);
     }
+}
+.item__img{
+    position: relative;
+    top: -20px;
+    margin-right: 20px;
 }
